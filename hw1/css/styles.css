@@ -1,0 +1,62 @@
+body{
+    
+    max-height: 800px;
+    background-color: black;
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+#pagetitle, #sitetitle{
+    width: 500px;
+    margin:auto;
+    margin-top: 50px;
+    text-align:center;
+}
+nav{
+    margin: 0px;
+    width:850px;
+    
+}
+img{
+    float:right;
+    margin: 30px;
+    height: 200px;
+    width: auto;
+    background-color:white;
+}
+div{
+    clear:right;
+}
+footer, h2{
+    text-align:center;
+    clear:right;
+}
+strong{
+    color:red;
+}
+#content{
+    margin :50px;
+}
+hr{
+    width: 600px;
+    border-color: green;
+    margin-bottom:40px;
+    
+}
+.navbar{
+    margin: 10px;
+    padding: 20px;
+    font-size: 25px;
+    background-color: green;
+    border-radius: 40%;
+    box-shadow: 10px 10px 5px #888888;
+}
+.navbar:hover{
+    background-color: yellow;
+}
+#sel{
+    background-color: #F9E79F;
+}
+a{
+    text-decoration: none
+}

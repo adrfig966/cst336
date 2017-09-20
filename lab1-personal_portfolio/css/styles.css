@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Gothic;
+    src: url("../fonts/Canterbury.ttf");
+}
+
+div.container{
+    width: 100%;
+    border: 10px solid #A569BD;
+}
+
+
+header, footer{
+    padding: 1em;
+    color: white;
+    background-color: #A569BD;
+    clear: left;
+    text-align: center;
+    
+}
+border{   padding: 1em;
+    color: #D8E0F7;
+    clear: left;
+    text-align: center;
+    background-color: #2F1773;
+    
+}
+
+body{
+    background-color: #D8E0F7;
+    text-align:center;
+}
+
+nav{
+    float: none;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    background-color: #E554C3;
+}
+
+nav span{
+    border-width: 4px;
+    border-color: red;
+    color: white;
+}
+
+.navlink{
+    color:white;
+    
+}
+.navlink:hover{ 
+    background-color: yellow;
+}
+
+.navlink:active{
+    color: purple;
+}
+
+#selected{
+    background-color:purple;
+    border-radius: 20%;
+}
+
+#name{
+    font-size: 60px;
+    font-family: Gothic;
+    letter-spacing: 10px;
+}
+.welcomesection{
+    float:left;
+    max-width:600px;
+    font-size: 50px;
+}
+
+ul{
+    text-align: left;
+    padding-left: 500px;
+}
+
+table{
+    margin: 0px auto;
+    padding: 10px;
+    border: 2px solid #A569BD;
+    border-radius: 10%;
+}
+
+td{
+    border: 2px solid #A569BD;
+    background-color: #E554C3;
+    border-radius: 10%;
+}
+
+#profpic{
+    border-radius: 10%;
+}
+
+#content{
+    text-align:left;
+}
+
+article{
+    padding: 1em;
+    overflow: hidden;
+}

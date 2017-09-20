@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stack information</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+    <h1 id="sitetitle">Stacks on stacks on stacks</h1>
+    <hr>
+    <div>
+        <nav>
+            <a class="navbar" href="index.html">
+                Overview
+            </a>
+            <a class="navbar" href="pointers.html">
+                Pointers
+            </a>
+            <a class="navbar" href="classes.html">
+                Classes
+            </a>
+            <a id="sel" class="navbar" href="combining.html">
+                Putting it together
+            </a>
+        </nav>
+    </div>
+    <h2 id="pagetitle">Putting it all together</h2>
+    
+    <div id="content">
+        <article>
+            <figure><img src="img/stacks.png" alt="Shaggy holding a huge sandwich"></figure>
+            <p>
+                To put it all together we have to consider what attributes our "stack" has. Our stack will have nodes. But the only one we are concerned with is the top one. 
+                We will store a pointer to our top node, this is because we will want to change what we our "pointing" to as it will change each time we add a node.
+                What can we "do" with our attributes? Well we can see what's at the top of the stack, remove what's at the top, and add to the top. These are known as the <strong>top</strong>, 
+                <strong>pop</strong>, and <strong>push</strong> methods of a stack, respectively. Our "node" is also an abstract type. The attributes of our node include it's value and a pointer to another node.
+            <br>
+            <br>This is how it works: When we add a node the new node's pointer is made to point to the "top" pointer, the top pointer is then changed to point to the new node.
+            <br>To remove the top node we store the address being pointed to by the "top" pointer in a temporary pointer. This is because we will lose the address being pointed to
+                when we change where the top pointer is pointing. We won't be able to clear up memory if that happens. We then change the top pointer to point to the node following the node at the top.
+                Finally, we delete the node being pointed to by the temporary pointer from earlier. If we didn't have this temporary pointer we would have lost the address and thus
+                been unable to delete what was stored at the address
+        </article>
+     </div>
+    <footer><br><br>Copyright 2017</footer>
+  
+</body>
+
+
+</html> 

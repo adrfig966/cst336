@@ -6,6 +6,7 @@
     <body>
         
             <a href="lab4-lcd/index.php">Lab 4</a>
+            <a href="lab3/index.php">Lab 3</a>
             <a href="lab2-pcp/index.php">Lab 2</a>
             <a href="lab1-personalportfolio/index.html">Lab 1</a>
             <a href="hw3/index.php">Homework 3</a>

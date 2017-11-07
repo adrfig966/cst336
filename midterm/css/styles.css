@@ -1,0 +1,19 @@
+body {
+	text-align: center;
+	font-size: 2em;
+	background-color: pink;
+}
+.error {
+	color: red;
+}
+table {
+	margin: 0 auto;
+}
+td {
+	width: 150px;
+	height: 100px;
+	border: 3px solid black;
+}
+td:hover{
+	border: 3px solid green;
+}

@@ -5,6 +5,8 @@
     //Setting up connection
     function setupDeviceDB($username, $password, $host, $dbname){
         global $dbConn, $deviceTypes, $deviceNames;
+        
+        
         $dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
         $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
         
@@ -14,6 +16,9 @@
         $sql = "SELECT DISTINCT deviceName FROM device";
         $stmt = $dbConn -> prepare ($sql);
         $stmt -> execute();
+        
+        
+        
         $i = 0;
         foreach($stmt as $row){
             $deviceNames[$i] = $row['deviceName'];

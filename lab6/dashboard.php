@@ -39,9 +39,11 @@ ob_start();
                 echo "Account has admin privileges</br>
                 Use form below to add user
                 </br>
+                <form action='' method='post'>
                 <input type='text' placeholder='Enter username' name='username'>
                 <input type='password' placeholder='Enter password' name='password'>
                 <button type='submit' name='createuser' class='btn btn-info'>Create User</button>
+                </form>
                 </br>";
             }
             foreach ($stmt as $row)
@@ -68,6 +70,16 @@ ob_start();
             <button type="submit" class="btn btn-info" name="logout">Log Out</button>
         </form>
     </div>
+    <?php
+        if(isset($_POST[createuser])){
+            $username = $_POST[username];
+            $hash = password_hash($_POST[password], PASSWORD_BCRYPT);
+            $sql = "INSERT INTO users (username, password) VALUES ('$username', '$hash')";
+            $stmt = $dbConn -> prepare ($sql);
+            $stmt -> execute();
+            header("Location: dashboard.php");
+        }
+    ?>
     <?php
         if(isset($_POST[logout])){
             if(session_destroy()) {

@@ -66,7 +66,22 @@ ob_start();
             }
         }
         if(isset($_POST[changeinfo])){
-            
+            $firstname = $row[firstname];
+            $lastname = $row[lastname];
+            if(strlen($_POST[username]) != 0){
+                $username = $_POST[username];
+            }
+            if(strlen($_POST[firstname]) != 0){
+                $firstname = $_POST[firstname];
+            }
+            if(strlen($_POST[lastname]) != 0){
+                $lastname = $_POST[lastname];
+            }
+            $ogname = $_GET[username];
+            $sql = "UPDATE users SET username = '$username', firstname = '$firstname', lastname = '$lastname' WHERE username = '$ogname'";
+            $stmt = $dbConn -> prepare ($sql);
+            $stmt -> execute();
+            header("Location: dashboard.php");
         }
     
     ?>

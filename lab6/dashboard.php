@@ -5,9 +5,7 @@ ob_start();
 <html>
 <head>
     <?php 
-        session_start();
-        $dbConn = new PDO("mysql:host=localhost;dbname=lab6", "adrfigu966", "336");
-        $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        include 'inc/connect.php';
         if(!isset($_SESSION[login_user])){
             header("Location: index.php");
         }

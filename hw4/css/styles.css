@@ -1,0 +1,39 @@
+body{
+    color: white;
+    background-color: #000069;
+}
+h1{
+    text-align: center;
+    
+}
+#banner{
+    width: 80%;
+    margin: auto;
+    background-color: #000029;
+    border-radius: 30px;
+    box-shadow: 10px 10px 60px #0000FF;
+    text-align: center;
+    color: white;
+}
+.bannerimages{
+    margin-left: 60px;
+}
+input{
+    width: 200px;
+    height: 50px;
+}
+input:hover{
+    width: 200px;
+    color: red;
+    height: 50px;
+}
+#content, #button{
+    text-align: center;
+    width: 50%;
+    border-radius: 30px;
+    margin: auto;
+    background-color: lightblue;
+    padding: 40px;
+    color: navy;
+    box-shadow: 10px 10px 60px #0000FF;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("div").click(function(){
+        $("div").animate({left: '250px', color: "#aa0000"});
+    });
+    
+    $("button").click(function(){
+        $.get("https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&endtime=2014-01-02", function(data, status){
+            alert("Location: " + data.features[0].properties.place);
+        });
+    });
+});
+</script> 
+</head>
+<body>
+
+<button name="button1" value="hello">Click for earthquake stuff</button>
+</body>
+</html>

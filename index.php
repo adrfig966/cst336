@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-       
     </head>
     <body>
-            <a href="lab7/index.php">Lab 7</a>
+            <a href="lab7/index.php">Lab 7</a> Make sure the url for this one is http and not https or the API call wont work :(
+            <br>
             <a href="lab6/index.php">Lab 6</a>
             <a href="lab5/index.php">Lab 5</a>
             <a href="lab4/index.php">Lab 4</a>

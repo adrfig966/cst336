@@ -12,7 +12,7 @@
         <?php
    
         
-        if (strlen(getenv("sqluser")) == 0 || strlen(getenv("sqlpw")) == 0 || strlen(getenv("sqlhost")) == 0 || strlen(getenv("dbname")) == 0){
+        if (strlen(getenv("sqluser")) == 0 || strlen(getenv("sqlpw")) == 0 || strlen(getenv("sqlhost")) == 0 || strlen(getenv("dbname2")) == 0){
                 
             $dbname = "lab6";
             $username = 'adrfigu966';
@@ -20,7 +20,7 @@
             $host = 'localhost';
         }
         else{
-            $dbname = getenv("dbname");
+            $dbname = getenv("dbname2");
             $username = getenv("sqluser");
             $password = getenv("sqlpw");
             $host = getenv("sqlhost");

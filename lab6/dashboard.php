@@ -21,7 +21,7 @@ ob_start();
 </head>
 <body>
     <?php
-        //echo password_hash("sk8ordie", PASSWORD_BCRYPT);
+        //echo password_hash("youreatowel", PASSWORD_BCRYPT);
     ?>
 
     <div class="container">

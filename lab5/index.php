@@ -3,10 +3,19 @@
 <head>
     <?php 
     include 'inc/forms.php';
-    $username = getenv("sqluser");
-    $password = getenv("sqlpw");
-    $host = getenv("sqlhost");
-    $dbname = getenv("dbname");
+    
+    if (strlen(getenv("sqluser")) == 0 || strlen(getenv("sqlpw")) == 0 || strlen(getenv("sqlhost")) == 0 || strlen(getenv("dbname")) == 0){
+        $dbname = "techcheckout";
+        $username = 'adrfigu966';
+        $password = '336';
+        $host = 'localhost';
+    }
+    else{
+        $dbname = getenv("dbname");
+        $username = getenv("sqluser");
+        $password = getenv("sqlpw");
+        $host = getenv("sqlhost");
+    }
     
     setupDeviceDB($username, $password, $host, $dbname);
     ?>

@@ -1,0 +1,56 @@
+body{
+
+}
+#content{
+    display: inline-block;
+    background-color: #99ff99;
+    min-width: 500px;
+    min-height: 400px;
+    vertical-align: top;
+    padding: 20px;
+}
+#sidebar{
+    margin-left: 20px;
+    display: inline-block;
+}
+#bar-group{
+    list-style-type: none;
+    background-color: #99ff99;
+}
+.bar-item{
+    background-color: #e5ccff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.bar-item:hover{
+    background-color: #ccff33;
+}
+.active{
+    background-color: #ff8c1a;
+}
+.aptmtrow{
+    font-size: 15px;
+    background-color: #ffff33;
+    padding: 50px;
+}
+input[type=button]{
+    background-color: #009999;
+    border: 1px solid #009999;
+    color: white;
+}
+input[type=button]:hover{
+    background-color: lightblue;
+}
+input[type=text], input[type=number]{
+    min-width: 250px;
+}
+
+td{
+    margin: 5px;
+}
+table{
+    min-width: 60px;
+}

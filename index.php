@@ -4,7 +4,8 @@
     </head>
     <body>
             
-     
+            <a href="finalproject/index.php">Final Project</a>
+            <br>
             <a href="lab7/index.php">Lab 7</a> Make sure the url for this one is http and not https or the API call wont work :(
             <br>
             <a href="lab6/index.php">Lab 6</a>

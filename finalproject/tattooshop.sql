@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2017 at 08:47 AM
+-- Generation Time: Dec 12, 2017 at 09:26 AM
 -- Server version: 5.5.57-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.22
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `tattooshop`
 --
+CREATE DATABASE IF NOT EXISTS `tattooshop` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `tattooshop`;
 
 -- --------------------------------------------------------
 
@@ -26,6 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `accounts`
 --
 
+DROP TABLE IF EXISTS `accounts`;
 CREATE TABLE IF NOT EXISTS `accounts` (
   `username` varchar(18) NOT NULL,
   `password` varchar(1024) NOT NULL,
@@ -48,6 +51,7 @@ INSERT INTO `accounts` (`username`, `password`, `employeeid`) VALUES
 -- Table structure for table `appointments`
 --
 
+DROP TABLE IF EXISTS `appointments`;
 CREATE TABLE IF NOT EXISTS `appointments` (
   `color` tinyint(1) NOT NULL,
   `price` float NOT NULL,
@@ -91,6 +95,7 @@ INSERT INTO `appointments` (`color`, `price`, `employeeid`, `date`, `time`, `id`
 -- Table structure for table `employees`
 --
 
+DROP TABLE IF EXISTS `employees`;
 CREATE TABLE IF NOT EXISTS `employees` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `firstname` varchar(30) NOT NULL,
